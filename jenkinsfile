@@ -8,7 +8,7 @@ pipeline {
   }
     stage (' TEST ') {
       steps  {
-        sh './ABC.exe'
+        sh './ABC.exe 8 9'
       }
   }
     stage (' DEPLOY ') {
