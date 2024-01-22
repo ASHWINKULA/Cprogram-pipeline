@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage (' BUILD ') {
       steps  {
-        makefile
+       sh 'makefile'
       }
   }
     stage (' TEST ') {
       steps  {
-        ./ABC.exe
+        sh './ABC.exe'
       }
   }
     stage (' DEPLOY ') {
