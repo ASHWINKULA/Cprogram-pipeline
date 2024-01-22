@@ -1,0 +1,21 @@
+pipeline {
+  agent any;
+  stages {
+    stage (' BUILD ') {
+      steps  {
+        makefile
+      }
+  }
+    stage (' TEST ') {
+      steps  {
+        ./ABC.exe
+      }
+  }
+    stage (' DEPLOY ') {
+      steps  {
+        echo  " This is Deploy Stage "
+      }
+  }
+  }
+}
+  
